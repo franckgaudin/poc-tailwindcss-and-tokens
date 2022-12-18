@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
-const tokens = require('@igloo-ui/tokens/dist/tokens.json');
+// const tokens = require('@igloo-ui/tokens/dist/tokens.json');
+const tokens = require('./tokens.json');
 
 module.exports = {
    content: [
@@ -8,12 +9,37 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        "electricBlue50": tokens.electricBlue50,
-        "electricBlue500": tokens.electricBlue500,
-      },
+    colors: {
+      ...tokens.colors
     },
+    screens: {
+      ...tokens.screens
+    },
+    fontFamily: {
+      ...tokens.fontFamily
+    },
+    fontSize: {
+      ...tokens.fontSize
+    },
+    fontWeight: {
+      ...tokens.fontWeight
+    },
+    lineHeight: {
+      ...tokens.lineHeight
+    },
+    borderRadius: {
+      ...tokens.borderRadius
+    },
+    spacing: {
+      ...tokens.spacing
+    },
+    zIndex: {
+      ...tokens.zIndex
+    },
+    dropShadow: {
+      ...tokens.dropShadow
+    },
+    extend: {},
   },
   plugins: [],
 }

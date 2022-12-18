@@ -14,8 +14,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={inter.className}>
-        <h1 className='p-8 font-semibold text-2xl'>Working together with Tailwindcss</h1>
-        <div className='bg-electricBlue500 text-white'>test</div>
+        <h1 className='py-4 px-2 font-SemiBold text-6'>Working together with Tailwindcss</h1>
+        <div className='bg-electricBlue500 text-samoyed p-2'>test</div>
       </main>
     </>
   )
