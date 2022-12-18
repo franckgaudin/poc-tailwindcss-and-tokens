@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
       <main className={inter.className}>
         <h1 className='py-4 px-2 font-SemiBold text-6'>Working together with Tailwindcss</h1>
-        <div className='bg-electricBlue500 text-samoyed p-2'>test</div>
+        <div className='bg-electricBlue500 text-samoyed p-2'>Text block for render colors</div>
       </main>
     </>
   )
